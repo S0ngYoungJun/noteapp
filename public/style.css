@@ -14,4 +14,26 @@
   padding: 20px;
   border-radius: 5px;
 }
- 
+.note-box {
+  /* 기본 스타일 */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  word-wrap: break-word;
+  max-height: 100px; /* 최대 높이 제한 */
+  overflow: hidden;
+}
+
+.note-box p {
+  max-height: 100px; /* 내용의 최대 높이 설정 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
+  cursor: pointer; /* 선택하여 전체 내용 볼 수 있도록 커서 설정 */
+  user-select: none; /* 전체 내용을 선택할 수 있도록 설정 */
+}
+
+.note-box p.selected {
+  max-height: none; /* 선택 시 전체 내용 보이도록 설정 */
+  overflow: visible;
+  user-select: text; /* 전체 내용 선택 가능하도록 설정 */
+}
