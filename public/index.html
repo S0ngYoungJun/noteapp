@@ -20,6 +20,16 @@
     </div>
     <!-- 노트를 표시할 공간 -->
     <div id="noteContainer"></div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+          <h2>Edit Note</h2>
+          <input type="text" id="editNoteTitle" placeholder="제목">
+          <textarea id="editNoteContent" placeholder="내용" rows="4"></textarea>
+          <button id="updateButton">Update</button>
+          <button id="deleteButton">Delete</button>
+          <button id="closeEditModal" class="close-button">Close</button>
+        </div>
+        
     <script src="script.js" type="application/javascript"></script>  
 </body>
 </html>
